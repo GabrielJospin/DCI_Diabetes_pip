@@ -6,6 +6,7 @@ from MultiLayerPerceptron import MultiLayerPerceptron
 
 def compare(original, resultado):
     error = 0
+    print(resultado)
     for index, x in np.ndenumerate(original):
         if x != resultado[index[0]]:
             error += 1
